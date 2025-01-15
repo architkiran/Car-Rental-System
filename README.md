@@ -48,3 +48,68 @@ The system is built using the microservices architecture:
 ```bash
 git clone https://github.com/your-username/car-rental-system.git
 cd car-rental-system
+
+### Setting Up Databases
+Open phpMyAdmin.
+Create databases for each service:
+- order_service_db
+- product_service_db
+- billing_service_db
+Import the respective SQL schema for each service from the /sql directory.
+
+### Build the Services
+Navigate to each service directory and run:
+- mvn clean install
+
+### Start Services
+Start the Eureka Server.
+Run the microservices in the following order:
+- Order Service
+- Product Service
+- Billing Service
+Use the following command to start each service:
+-mvn spring-boot:run
+```
+
+### API Endpoints
+
+**Order Service**
+```
+- Create Order: POST /api/orders
+- View Order: GET /api/orders/{id}
+```
+
+**Product Service**
+```
+- Add Car: POST /api/cars
+- Get Car Details: GET /api/cars/{id}
+```
+
+**Billing Service**
+```
+- Generate Bill: POST /api/billing
+- Get Bill: GET /api/billing/{id}
+```
+
+### Running the Application
+**Access the Eureka Server Dashboard at:**
+```
+http://localhost:8761
+```
+### Project Directory Structure:
+```
+car-rental-system/
+|-- order-service/
+|   |-- src/
+|-- product-service/
+|   |-- src/
+|-- billing-service/
+|   |-- src/
+|-- eureka-server/
+|   |-- src/
+|-- sql/
+|   |-- order_service_db.sql
+|   |-- product_service_db.sql
+|   |-- billing_service_db.sql
+```
+
