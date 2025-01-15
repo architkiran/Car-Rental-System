@@ -136,3 +136,8 @@ car-rental-system/
 ### Conclusion
 
 The **Car Rental System** provides an efficient and scalable solution for managing car rental operations. By leveraging a microservices architecture, each component of the system—orders, products, and billing—is isolated, making it easier to develop, maintain, and scale individual services as needed. The use of **Eureka Server** for service discovery and **MySQL** for persistent storage ensures that the system is both flexible and robust. As the system evolves, there is potential to integrate additional services such as payment gateways, user authentication, and analytics, further enhancing its functionality and user experience. This project serves as a solid foundation for building more complex, distributed applications in the car rental domain.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
