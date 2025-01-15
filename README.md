@@ -44,8 +44,9 @@ The system is built using the microservices architecture:
 
 ## Getting Started
 
-### Clone the Repository
 ```bash
+### Clone the Repository
+
 git clone https://github.com/your-username/car-rental-system.git
 cd car-rental-system
 
