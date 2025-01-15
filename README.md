@@ -114,3 +114,25 @@ car-rental-system/
 |   |-- billing_service_db.sql
 ```
 
+### Key Features and Concepts
+
+- **Microservices Architecture**: The Car Rental System is built using microservices, where each service is independent and communicates over REST APIs. The system includes:
+  - **Order Service**: Handles customer rental orders, including creation, retrieval, and management.
+  - **Product Service**: Manages the car inventory, adding, updating, and retrieving car details.
+  - **Billing Service**: Manages the payment processing and generates bills for rental orders.
+
+- **Eureka Server for Service Discovery**: The system uses **Eureka** for dynamic service discovery, allowing services to register and discover each other easily.
+
+- **MySQL Database**: The system relies on **MySQL** databases for persistent storage of order, product, and billing information. phpMyAdmin is used to manage the databases.
+
+- **Spring Boot**: All services are developed using **Spring Boot**, a framework that simplifies the development and deployment of Java-based microservices.
+
+- **RESTful API**: The services expose RESTful APIs, which allows communication between the microservices and enables interaction with external systems such as client applications.
+
+- **Service Interdependence**: While each service functions independently, they work together to manage the full car rental lifecycle—from car availability, to booking, to billing.
+
+---
+
+### Conclusion
+
+The **Car Rental System** provides an efficient and scalable solution for managing car rental operations. By leveraging a microservices architecture, each component of the system—orders, products, and billing—is isolated, making it easier to develop, maintain, and scale individual services as needed. The use of **Eureka Server** for service discovery and **MySQL** for persistent storage ensures that the system is both flexible and robust. As the system evolves, there is potential to integrate additional services such as payment gateways, user authentication, and analytics, further enhancing its functionality and user experience. This project serves as a solid foundation for building more complex, distributed applications in the car rental domain.
