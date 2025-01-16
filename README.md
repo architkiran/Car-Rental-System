@@ -113,6 +113,7 @@ car-rental-system/
 |   |-- product_service_db.sql
 |   |-- billing_service_db.sql
 ```
+---
 
 ### Key Features and Concepts
 
